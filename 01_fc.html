@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/fusioncharts.js"></script>
+        <script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+        <script type="text/javascript">
+            FusionCharts.ready(function(){
+                    var revenueChart = new FusionCharts({
+                        "type":"column2d",
+                        "renderAt":"posisix",
+                        "width": "500",
+                        "height":"300",
+                        "dataFormat":"json",
+                        "dataSource":{
+                            "chart":{
+                                "caption":"Jumlah Data",
+                                "subCaption":"Beasiswa Internasional Vocaship.id",
+                                "xaxisName":"Bulan",
+                                "yAxisName":"Jumlah Data",
+                                "theme":"fint"
+                            },
+                            "data":[
+                                {"label":"Agustus","value":"2"},
+                                {"label":"Juni","value":"1"},
+                                {"label":"Desember","value":"3"}
+                            ]
+                        }
+                    });
+                    revenueChart.render();
+                }
+            )
+        </script>
+    </head>
+    <body>
+        <div id="posisix"></div>
+    </body>
+</html>
